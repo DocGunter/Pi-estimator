@@ -14,6 +14,9 @@ let y = random(100, 100+len);
     // find the max of height and width
     let minim = min(width, height);
     let len = minim-400;
+		if (len<200){
+			len = 250;
+		}
     fill(255);
     rect(width/2-len/2, 100, len, len);
     stroke(255, 0, 0);
@@ -76,3 +79,4 @@ let y = random(100, 100+len);
     text(myPi, width/2, len+175);
     
 }   
+
